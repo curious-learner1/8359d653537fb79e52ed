@@ -10,6 +10,7 @@ class RobotController < ApplicationController
 				robot.send(command.downcase)
 			end
 		end
+		
 		render json: {location: robot.report}, status: 200
 	end
 
